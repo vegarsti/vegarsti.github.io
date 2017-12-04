@@ -3,6 +3,7 @@
 
 .ruby-version
 Gemfile
+Gemfile.lock
 
 ### Jekyll ###
 _site/
