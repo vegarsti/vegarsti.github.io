@@ -16,7 +16,7 @@ Some text about how I study statistics at [University of Oslo](http://google.com
 
 [All posts](/blog.html)
 {% for post in site.posts limit: 3 %}
-- `{{ post.date | date: "%Y-%m-%d" }}` - [{{ post.title }}]({{ post.url }}) {% endfor %}
+- `{{ post.date | date: "%Y-%m-%d" }}` [{{ post.title }}]({{ post.url }}) {% endfor %}
 
 ## Projects
 
