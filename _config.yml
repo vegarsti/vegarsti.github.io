@@ -38,3 +38,7 @@ sass:
 gems:
   - jekyll-sitemap
   - jekyll-seo-tag
+
+assets:
+  sources:
+    - assets/fonts
