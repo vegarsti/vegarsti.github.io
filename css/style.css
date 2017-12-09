@@ -122,13 +122,21 @@ th {
   background-color: #f9f9f9;
 }
 
-
-.header-link {
-  a, a:link, a:visited, a:hover, a:active; {
-    color: #a8a8a8;
-  }
-}
-
 .highlight {
   border-left: 1px #f9f9f9;
+}
+
+.post-meta {
+  margin-top: -1rem;
+}
+
+ul {
+  list-style-type: circle;
+}
+
+li {
+  > ul,
+  > ol {
+    margin-bottom: 0;
+  }
 }
