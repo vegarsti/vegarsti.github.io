@@ -2,10 +2,6 @@
 layout: post
 title: "Counting in pandas"
 date: 2017-09-25T19:04:11+00:00
-categories:
-    - data science
-    - python
-    - pandas
 ---
 
 Given data where you have a column \\(X_1\\), say, dates, and another column \\(X_2\\) of some categorical value. You want to count the number of occurrences of each of these pairs. How do you do this?

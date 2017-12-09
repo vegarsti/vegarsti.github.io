@@ -2,7 +2,6 @@
 layout: post
 title: Setting up
 date: 2017-04-22T13:53:07+00:00
-categories: setup
 ---
 
 In this blog post I describe the steps needed to set up this static blog on a DigitalOcean VPS. I spent a lot of time troubleshooting before I got it to work, so I decided to document the entire process, since I am likely to forget a lot of these small steps. The end result is that I can write blog posts locally in Markdown, push the changes, and then the VPS builds the site.
