@@ -1,11 +1,9 @@
 ---
 layout: default
-title: Vegard Stikbakke | Vegard Stikbakke
+title: Vegard Stikbakke
 ---
 
 # Vegard Stikbakke
-<img id="face" src="../assets/img/favicon.ico" align="right" style="width: 10%; border-radius: 50%; border: 1px solid; margin: -110px 0 0 2px;">
-
 
 Some text about how I study statistics at [University of Oslo](http://google.com) and work with data science at [Kolonial.no](http://kolonial.no).
 

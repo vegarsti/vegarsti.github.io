@@ -131,12 +131,21 @@ th {
 }
 
 ul {
-  list-style-type: circle;
+  list-style-type: none;
+  position: relative;
+  display: block;
+  margin: 0;
+  padding: 0rem;
 }
 
 li {
-  > ul,
-  > ol {
-    margin-bottom: 0;
-  }
+  list-style: inherit;
+  text-indent: 0.75rem;
+}
+
+li:before {
+  content: "◦ ";
+  font-size: 70%;
+  margin-right: 0.5rem;
+  vertical-align: 9%;
 }
