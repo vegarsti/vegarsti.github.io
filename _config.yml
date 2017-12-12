@@ -1,17 +1,21 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely need to edit after that.
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'jekyll serve'. If you change this file, please restart the server process.
-
 # Site settings
 title: Vegard Stikbakke
 email: vegard.stikbakke@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Programming and statistics
+  Programming and statistics.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vegardstikbakke.com" # the base hostname & protocol for your site
+
+# Settings for datetime and language
+date_format: "%B %d, %Y"  # e.g. April 22, 2017
+time_format: "%H:%M"     # 24 hour time
+lang: en
+timezone: UTC
+
+# Specify link for articles
+permalink: /:title/
+
+github_username:  vegarsti
 
 # SEO settings
 twitter:
@@ -39,10 +43,25 @@ gems:
   - jekyll-sitemap
   - jekyll-seo-tag
 
+# Load custom fonts
 assets:
   sources:
     - assets/fonts
 
+# Specify sites appearing in the nav menu
 navigation:
   - title: "Blog"
     url: /blog/
+
+# Markdown settings
+kramdown:
+  auto_ids: false
+  enable_coderay: false
+  entity_output: as_char
+  footnote_nr: 1
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  toc_levels: 1..6
+
+
+# Google Analytics
+google_analytics: UA-46491814-2
