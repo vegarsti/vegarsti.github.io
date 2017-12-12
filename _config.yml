@@ -42,3 +42,7 @@ gems:
 assets:
   sources:
     - assets/fonts
+
+navigation:
+  - title: "Blog"
+    url: /blog/

@@ -60,6 +60,11 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
+h1 {
+  font-weight: 800;
+  letter-spacing: -1px;
+}
+
 /* Image styling */
 
 img {
@@ -84,12 +89,12 @@ pre {
 /* Hyperlink styling */
 
 a:link {
-  color: #268bd2;;
+  color: #268bd2;
   text-decoration: none;
 }
 
 a:visited {
-  color: #268bd2;;
+  color: #268bd2;
 }
 
 a:hover {
@@ -148,4 +153,39 @@ li:before {
   font-size: 70%;
   margin-right: 0.5rem;
   vertical-align: 9%;
+}
+
+.site-header {
+  margin-top: -30px;
+  min-height: 30px;
+  position: relative;
+  font-size: 125%;
+  line-height: 2;
+}
+
+.site-title {
+  float: left;
+  letter-spacing: -1px;
+  font-weight: 800;
+  color: black;
+
+  a, a:link, a:active, a:visited, a:hover {
+    color: black;
+  }
+}
+
+.site-nav {
+  float: right;
+  .page-link {
+    color: black;
+
+    /* Gaps between nav items, but not on the last one */
+    &:not(:last-child) {
+      margin-right: 20px;
+    }
+  }
+}
+
+.page-link {
+  color: grey;
 }
