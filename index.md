@@ -10,7 +10,8 @@ Some text about how I study statistics at [University of Oslo](http://google.com
 - [GitHub](https://github.com/vegarsti)
 - [LinkedIn](https://no.linkedin.com/in/vegardstikbakke)
 - [Twitter](https://twitter.com/vegardstikbakke)
-- [Curriculum Vitae (resume?)](https://google.com) (pdf)
+- [E-mail](mailto:vegard.stikbakke@gmail.com)
+- [CV](https://google.com) (pdf)
 
 ## Blog
 
