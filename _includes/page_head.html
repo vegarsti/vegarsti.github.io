@@ -12,7 +12,7 @@
         {% else %}
           {% assign url = link.url | relative_url %}
         {% endif %}
-        <a class="page-link" style="color: #a8a8a8;" href="{{ url }}">{{ link.title }}</a>
+        <a class="page-link" href="{{ url }}">{{ link.title }}</a>
       {% endfor %}
     </nav>
 

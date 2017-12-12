@@ -1,6 +1,13 @@
 ---
 ---
 
+/* Top variables */
+
+$color: black;
+$background-color: white;
+$brand-color: #268bd2;
+$gray-color: #a8a8a8;
+
 /* Load fonts */
 
 /* Monospace */
@@ -78,7 +85,7 @@ img {
 
 code, pre {
   font-family: 'Source Code Pro Light', monospace;
-  background-color: white;
+  background-color: $background-color;
   font-size: 90%;
 }
 
@@ -89,7 +96,7 @@ pre {
 /* Hyperlink styling */
 
 a:link {
-  color: #268bd2;
+  color: $brand-color;
   text-decoration: none;
 }
 
@@ -167,7 +174,6 @@ li:before {
   float: left;
   letter-spacing: -1px;
   font-weight: 800;
-  color: black;
 
   a, a:link, a:active, a:visited, a:hover {
     color: black;
@@ -177,15 +183,11 @@ li:before {
 .site-nav {
   float: right;
   .page-link {
-    color: black;
+    color: $gray-color;
 
     /* Gaps between nav items, but not on the last one */
     &:not(:last-child) {
       margin-right: 20px;
     }
   }
-}
-
-.page-link {
-  color: grey;
 }
