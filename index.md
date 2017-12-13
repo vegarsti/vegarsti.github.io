@@ -11,7 +11,7 @@ Some text about how I study statistics at [University of Oslo](http://google.com
 - [LinkedIn](https://no.linkedin.com/in/vegardstikbakke)
 - [Twitter](https://twitter.com/vegardstikbakke)
 - [E-mail](mailto:vegard.stikbakke@gmail.com)
-- [CV](https://google.com) (pdf)
+- [Resume](assets/pdf/resume.pdf) (pdf)
 
 ## Blog
 
