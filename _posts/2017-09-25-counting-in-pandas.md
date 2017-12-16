@@ -9,7 +9,7 @@ Given data where you have a column \\(X_1\\), say, dates, and another column \\(
 <!-- more -->
 
 | Date         | Value |
-| :------------|------:|
+| :-----------:|------:|
 | `2017-09-25` |   1   |
 | `2017-09-25` |   0   |
 | `2017-09-25` |   0   |
@@ -27,8 +27,10 @@ df.pivot_table(index=['Date', 'Value'],
     fill_value=0, aggfunc=len)
 ```
 
+This gives us:
+
 | Date         | Value | Count |
-| :-----------:|:-----:|:-----:|
+| :-----------:|------:|------:|
 | `2017-09-25` |   0   |   2   |
 | `2017-09-25` |   1   |   2   |
 | `2017-09-25` |   2   |   1   |
