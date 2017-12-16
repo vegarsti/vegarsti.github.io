@@ -91,13 +91,9 @@ td, th {
   border: 1px solid #e5e5e5;
 }
 
-/* Table header */
+/* Table header color */
 th {
   background-color: #f9f9f9;
-}
-
-.highlight {
-  border-left: 1px #f9f9f9;
 }
 
 .post-meta {
@@ -110,6 +106,7 @@ ul {
   display: block;
   margin: 0;
   padding: 0rem;
+  margin-top: -10px;
 }
 
 li {
@@ -151,5 +148,26 @@ li:before {
     &:not(:last-child) {
       margin-right: 20px;
     }
+  }
+}
+
+#links {
+  
+  ul {
+    margin-left: -10px;
+  }
+  
+  li:before {
+    content: "";
+    margin-right: 0.5rem;
+  }
+  
+  i {
+    padding-top: 7px;
+    position: absolute;
+  }
+
+  a:hover {
+    text-decoration: underline;
   }
 }
