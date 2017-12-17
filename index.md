@@ -30,7 +30,7 @@ I'm a master's student in statistics ([Modelling and Data Analysis](http://www.u
         <li>
             <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <a href="assets/pdf/resume.pdf">Resume</a>
+            <a href="assets/pdf/Resume.pdf">Resume</a>
         </li>
     </ul>
 </div>
