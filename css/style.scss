@@ -13,8 +13,8 @@ $gray-color: #a8a8a8;
 body {
   font-size: 120%;
   font-family: 'Calendas Plus';
-  line-height: 1.7;
-  text-align: justify;
+  line-height: 1.6;
+  letter-spacing: 0.1px;
 }
 
 .main {
@@ -163,7 +163,7 @@ li:before {
   }
   
   i {
-    padding-top: 7px;
+    padding-top: 6px;
     position: absolute;
   }
 
