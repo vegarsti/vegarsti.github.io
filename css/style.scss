@@ -26,7 +26,7 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   text-align: left;
-  font-weight: bold;
+  font-family: 'Calendas Plus Bold';
 }
 
 h1 {
@@ -133,6 +133,7 @@ li:before {
   float: left;
   letter-spacing: -1px;
   font-weight: 800;
+  font-family: 'Calendas Plus Bold';
 
   a, a:link, a:active, a:visited, a:hover {
     color: black;
