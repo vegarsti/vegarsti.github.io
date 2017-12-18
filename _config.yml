@@ -38,8 +38,7 @@ exclude:
 sass:
   style: compressed
 
-# Plugins
-gems:
+plugins:
   - jekyll-sitemap
   - jekyll-seo-tag
 
