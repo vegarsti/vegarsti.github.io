@@ -1,7 +1,8 @@
 #!/bin/bash
 
 usage() {
-    echo $'usage: ./new_draft.sh [filename] [title]'
+    local script_name="$(basename \"$0)"
+    printf $'usage: %s [filename] [title]\n' "$script_name"
 }
 
 create_draft_post() {
