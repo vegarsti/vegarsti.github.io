@@ -45,8 +45,17 @@ I'm a master's student in statistics ([Modelling and Data Analysis](http://www.u
 
 ## Blog
 
+<!-- {% for post in site.posts limit: 3 %}
+- `{{ post.date | date: "%Y-%m-%d" }} - ` [{{ post.title }}]({{ post.url }}) {% endfor %} -->
+
+<div id="blog-links">
 {% for post in site.posts limit: 3 %}
-- `{{ post.date | date: "%Y-%m-%d" }} - ` [{{ post.title }}]({{ post.url }}) {% endfor %}
+<div class="blog-link">
+<a href="{{ post.url }}">{{ post.title }}</a>
+<br />{{ post.date | date: "%B %-d, %Y" }}
+</div>
+{% endfor %}
+</div>
 
 ## Projects
 
