@@ -5,12 +5,14 @@ usage() {
     printf $'usage: %s [filename] [title]\n' "$SCRIPT_NAME"
 }
 
-create_draft_post() {
+create_post() {
+    local DATE=`date +%Y-%m-%d`
     local FILENAME="$1"
     local TITLE="$2"
-    local DRAFT_DIR="_drafts"
-    mkdir -p "$DRAFT_DIR"
-    local FULL_FILENAME="$DRAFT_DIR/$FILENAME.md"
+    local POSTS_DIR="_posts"
+    mkdir -p "$POSTS_DIR"
+    local FULL_FILENAME="$POSTS_DIR/$DATE-$FILENAME.md"
+    touch "$FULL_FILENAME"
     cat <<EOT >> "$FULL_FILENAME"
 ---
 layout: post
@@ -24,4 +26,4 @@ if [ "$#" -ne 2 ]; then
     exit 1
 fi
 
-create_draft_post "$1" "$2"
+create_post "$1" "$2"
