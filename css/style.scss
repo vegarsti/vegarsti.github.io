@@ -15,7 +15,6 @@ body {
   font-family: 'Calendas Plus';
   line-height: 1.6;
   letter-spacing: 0.1px;
-  text-align: justify;
 }
 
 .main {
@@ -61,6 +60,7 @@ pre {
 a:link {
   color: $brand-color;
   text-decoration: none;
+  font-weight: bold;
 }
 
 a:visited {
