@@ -5,7 +5,7 @@ title: Vegard Stikbakke
 
 # Vegard Stikbakke
 
-I'm a master's student in statistics ([Modelling and Data Analysis](http://www.uio.no/english/studies/programmes/modelling-data-analysis/)) at the University of Oslo. I'm currently taking machine learning courses and doing a research thesis focusing on applying the statistical machine-learning framework of [statistical boosting](https://en.wikipedia.org/wiki/Boosting_(machine_learning)) to [first-hitting-time models](https://en.wikipedia.org/wiki/First-hitting-time_model).
+I'm a master's student in statistics ([Modelling and Data Analysis](http://www.uio.no/english/studies/programmes/modelling-data-analysis/)) at the University of Oslo. I'm currently taking machine learning courses and doing research on applying the statistical machine-learning framework of [statistical boosting](https://en.wikipedia.org/wiki/Boosting_(machine_learning)) to [first-hitting-time models](https://en.wikipedia.org/wiki/First-hitting-time_model).
 
 ## Blog
 
