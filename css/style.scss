@@ -48,11 +48,15 @@ img {
 code, pre {
   font-family: 'Source Code Pro Light', monospace;
   background-color: $background-color;
+}
+
+code {
   font-size: 90%;
 }
 
 pre {
   padding-left: 1em;
+  font-size: 75%;
 }
 
 /* Hyperlink styling */

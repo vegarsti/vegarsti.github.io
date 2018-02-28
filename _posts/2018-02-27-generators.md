@@ -7,11 +7,12 @@ Python is a cool language! I might be biased, since that's what I used to learn 
 
 An **iterator** is, [in the words of the official documentation](https://docs.python.org/3/glossary.html#term-iterator), *an object representing a stream of data*. An iterator is something you can call `next` on to get the next item. This is what happens in a `for` loop from one iteration to the next (I think!).
 
-Some typical things to do `for` loops on include lists and strings. These are not iterators, but **iterables**. Again in the words of the [documentation](https://docs.python.org/3/glossary.html#term-iterable), an iterable is *an object capable of returning its members one at a time*. An iterable is not necessarily an iterator. For example,
+Some typical things to do `for` loops on include lists and strings. These are not iterators, but **iterables**. Again in the words of the [documentation](https://docs.python.org/3/glossary.html#term-iterable), an iterable is *an object capable of returning its members one at a time*. An iterable is not necessarily an iterator. For example, (note that `#` here means the output we get)
 
 ```python
 items = [1, 2, 3]
-item = next(items) # TypeError: 'list' object is not an iterator
+item = next(items)
+# TypeError: 'list' object is not an iterator
 ```
 However, if you call `iter` on an _iterable_, you get an _iterator_:
 
@@ -25,7 +26,7 @@ In addition, we have something called **generators**. A generator is a function 
 
 When a generator _function_ is called, a generator _object_ is created, without executing anything in the function. The generator works in such a way that it starts executing until it reaches the first `yield` expression in the code. Then it returns the value in this expression. The next time `next` is called, the generator continues its execution, _continuing where it left off_, until the next `yield` expression. And so on. This is an example of [lazy evaluation](https://en.wikipedia.org/wiki/Lazy_evaluation).
 
-Let's look at an example of a generator. (Note that `>` means the output we get.)
+Let's look at an example of a generator.
 
 ```python
 def a_generator():
@@ -37,14 +38,14 @@ def a_generator():
     
 iterator = a_generator()
 item = next(iterator)
-> before 0
+# before 0
 print(item)                   # 0
 item = next(iterator)
-> before hi
+# before hi
 print(item)                   # hi
 next(iterator)
-> last
-> StopIteration error
+# last
+# StopIteration error
 ```
 We see that we called `next` one time too many. This is avoided, however, if we use a `for` to iterate, since it will stop when hitting `StopIteration`.
 
@@ -52,11 +53,11 @@ We see that we called `next` one time too many. This is avoided, however, if we 
 iterator = a_generator()
 for item in iterator:
     print(item)
-> before first
-> 0
-> after first
-> hi
-> last
+# before first
+# 0
+# after first
+# hi
+# last
 ```
 
 Finally, an important thing that the lazy evaluation provides us with is the ability to create infinite iterators!
