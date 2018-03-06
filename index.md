@@ -36,7 +36,7 @@ I'm a master's student in statistics ([Modelling and Data Analysis](http://www.u
         </li>
         <li>
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
-            <a href="mailto:vegard.stikbakke@gmail.com">E-mail</a>
+            <code>vegard.stikbakke@gmail.com</code>
         </li>
         <li>
             <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
