@@ -10,5 +10,3 @@ permalink: /blog/
 <br />{{ post.date | date: "%B %-d, %Y" }}
 </div>
 {% endfor %}
-
-[Subscribe with rss](/feed.xml)

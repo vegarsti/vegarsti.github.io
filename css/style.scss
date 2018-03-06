@@ -65,6 +65,9 @@ a:link {
   color: $brand-color;
   text-decoration: none;
   font-weight: bold;
+  code {
+    font-weight: normal;
+  }
 }
 
 a:visited {
