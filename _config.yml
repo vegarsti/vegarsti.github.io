@@ -1,8 +1,7 @@
 # Site settings
 title: Vegard Stikbakke
 email: vegard.stikbakke@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  Programming and statistics
+description: "Vegard Stikbakke, an MS Statistics student. Interested in statistics, programming, and their intersection."
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vegardstikbakke.com" # the base hostname & protocol for your site
 
