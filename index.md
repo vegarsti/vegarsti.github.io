@@ -8,7 +8,6 @@ title: Vegard Stikbakke
 I'm a master's student in statistics ([Modelling and Data Analysis](http://www.uio.no/english/studies/programmes/modelling-data-analysis/)) at the University of Oslo. I'm currently taking machine learning courses and doing research on applying the statistical machine-learning framework of [boosting](https://en.wikipedia.org/wiki/Boosting_(machine_learning)) to [first-hitting-time models](https://en.wikipedia.org/wiki/First-hitting-time_model). I'm interested in software development and machine learning.
 
 ## Blog
-<!-- <a href="blog/">All {{ site.posts.size }} posts</a> -->
 <div id="blog-links">
 {% assign limit = 3 %}
 {% for post in site.posts limit: limit %}
@@ -17,6 +16,7 @@ I'm a master's student in statistics ([Modelling and Data Analysis](http://www.u
 <br />{{ post.date | date: "%B %-d, %Y" }}
 </div>
 {% endfor %}
+<ul><li><i class="fa fa-pencil" aria-hidden="true"></i><h3><a href="blog/">All {{ site.posts.size }} blog posts</a></h3></li></ul>
 </div>
 
 ## Links
