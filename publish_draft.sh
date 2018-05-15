@@ -3,19 +3,20 @@
 publish() {
     local DRAFT_DIR="_drafts"
     local POSTS_DIR="_posts"
-    printf "Drafts in draft directory $DRAFT_DIR:\n"
-    local MY_ARRAY=(`find "$DRAFT_DIR" -name "*.md"`)
+    printf "Drafts in draft directory %s:\\n" "$DRAFT_DIR"
+    local DRAFT_FILES
+    DRAFT_FILES=(`find "$DRAFT_DIR" -name "*.md"`)
     local INDEX=0
     local HUMAN_READABLE_INDEX=1
-    for ELEMENT in "${MY_ARRAY[@]}"
-    do
-        printf "\t $HUMAN_READABLE_INDEX "
+    for ELEMENT in "${DRAFT_FILES[@]}"; do
+        printf "\\t %s " "$HUMAN_READABLE_INDEX"
         basename "$ELEMENT" .md
-        let INDEX="${INDEX}"+1
-        let HUMAN_READABLE_INDEX="${HUMAN_READABLE_INDEX}"+1
+        (( INDEX="${INDEX}"+1 ))
+        (( HUMAN_READABLE_INDEX="${HUMAN_READABLE_INDEX}"+1 ))
     done
     read -p "Publish which draft? (0 to quit.) " CHOICE
-    local CHOICE_IF_INTEGER="$(echo "$CHOICE" | grep -E ^\-?[0-9]+$)"
+    local CHOICE_IF_INTEGER
+    CHOICE_IF_INTEGER="$(echo "$CHOICE" | grep -E '^\-?[0-9]+$')"
     if [[ -z "$CHOICE_IF_INTEGER" ]]; then
         echo "Not a valid choice!"
         exit 1
@@ -31,9 +32,13 @@ publish() {
         exit 1
     fi
     local FILENAME="${MY_ARRAY[$ACTUAL_CHOICE]}"
-    local BASENAME="$(basename $FILENAME)"
-    local BASENAME_WITHOUT_FILE="$(basename $FILENAME .md)"
-    local DATE=`date +%Y-%m-%d`
+    local BASENAME
+    local BASENAME_WITHOUT_FILE
+    BASENAME="$(basename $FILENAME)"
+    BASENAME_WITHOUT_FILE="$(basename $FILENAME .md)"
+    echo "$BASENAME_WITHOUT_FILE"
+    local DATE
+    DATE="$(date +%Y-%m-%d)"
     local FULL_FILENAME="$POSTS_DIR/$DATE-$BASENAME"
     #mv "$FILENAME" "$FULL_FILENAME"
     echo "Publishing draft '$BASENAME_WITHOUT_FILE'!"
