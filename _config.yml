@@ -16,17 +16,6 @@ permalink: /:title/
 
 github_username:  vegarsti
 
-# SEO settings
-twitter:
-  username: vegardstikbakke
-author: Vegard Stikbakke
-social:
-  name: Vegard Stikbakke
-  links:
-    - https://twitter.com/vegardstikbakke
-    - https://github.com/vegarsti
-    - https://www.linkedin.com/in/vegardstikbakke/
-
 # Build settings
 markdown: kramdown
 exclude:
@@ -36,9 +25,6 @@ exclude:
   - vendor
 sass:
   style: compressed
-
-plugins:
-  - jekyll-seo-tag
 
 # Load custom fonts
 assets:
