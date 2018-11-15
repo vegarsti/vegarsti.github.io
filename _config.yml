@@ -38,7 +38,6 @@ sass:
   style: compressed
 
 plugins:
-  - jekyll-sitemap
   - jekyll-seo-tag
 
 # Load custom fonts
