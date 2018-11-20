@@ -54,4 +54,4 @@ I'm a master's student in statistics ([Modelling and Data Analysis](http://www.u
 ## Projects
 
 - [`csvprint`](http://github.com/vegarsti/csvprint)
-- [Reply-to-sheets](http://reply-to-sheets.com)
+- [Reply-to-sheet](http://reply-to-sheet.com)
