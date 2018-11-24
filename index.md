@@ -5,7 +5,7 @@ title: Vegard Stikbakke
 
 # Vegard Stikbakke
 
-I'm a master's student in statistics ([Modelling and Data Analysis](http://www.uio.no/english/studies/programmes/modelling-data-analysis/)) at the University of Oslo, where I'm doing research on applying the statistical machine-learning framework of [boosting](https://en.wikipedia.org/wiki/Boosting_(machine_learning)) to [first-hitting-time models](https://en.wikipedia.org/wiki/First-hitting-time_model) in survival analysis for high-dimensional data sets. I'm interested in machine learning and software development.
+I'm an MS student in statistics at the University of Oslo (in Norway). Previously I did a BS in math and computer science. I'm interested in software development, machine learning and learning new things.
 
 ## Blog
 <div id="blog-links">
@@ -53,5 +53,5 @@ I'm a master's student in statistics ([Modelling and Data Analysis](http://www.u
 
 ## Projects
 
-- [`csvprint`](http://github.com/vegarsti/csvprint)
 - [Reply-to-sheet](http://reply-to-sheet.com)
+- [`csvprint`](http://github.com/vegarsti/csvprint)
