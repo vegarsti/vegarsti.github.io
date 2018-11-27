@@ -5,7 +5,7 @@ title: Enforcing keyword arguments in Python 3
 
 Today I learned that in Python 3, one can enforce the use of keyword arguments in functions!
 
-Consider a function for doing safe division. Several things can go wrong when doing division directly, and therefore we might want to use a function which could handle possible errors. One possible error is that dividing by zero is not allowed. Another is that in Python, division always returns a floating point number, and Python does not support arbitrarily large floating point numbers. Thus one might get an overflow error. (See [here](https://stackoverflow.com/questions/27946595/how-to-manage-division-of-huge-numbers-in-python).) We might want to introduce two flags for handling these types of errors in our division function, `ignore_overflow` and `ignore_zero_division`. By default, these should be `False`.
+Consider a function for doing safe division. Several things can go wrong when doing division directly, and therefore we might want to use a function which could handle possible errors. One possible error is dividing by zero. This is an undefined operation, and it will raise an error. Another is that in Python, division always returns a floating point number, and Python does not support arbitrarily large floating point numbers. Thus one might get an overflow error. (See [here](https://stackoverflow.com/questions/27946595/how-to-manage-division-of-huge-numbers-in-python).) We might want to introduce two flags for handling these types of errors in our division function, `ignore_overflow` and `ignore_zero_division`. By default, these should be `False`.
 
 ```python
 def safe_division(number, divisor, ignore_overflow=False, ignore_zero_division=False):
