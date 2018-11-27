@@ -48,3 +48,6 @@ kramdown:
 
 # Google Analytics
 google_analytics: UA-46491814-2
+
+plugins:
+  - jekyll-feed
