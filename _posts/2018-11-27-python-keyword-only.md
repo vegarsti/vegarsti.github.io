@@ -37,7 +37,7 @@ safe_division(1, 0, ignore_zero_division=True, ignore_overflow=False)
 
 A solution for this is to enforce using keyword arguments. This is possible to do in Python 2 by specifying a keyword argument dictionary, typically called `**kwargs`. 
 
-However, in Python 3, there is a simple way to enforce it!
+However, in Python 3, there is a simple way to enforce it! By adding a `*` in the function arguments, we force all _succeeding_ arguments to be named. E.g. by having the first argument be `*`, we force all arguments to be named.
 
 ```python
 def safe_division(*, number, divisor, ignore_overflow, ignore_zero_division):
