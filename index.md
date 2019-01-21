@@ -5,7 +5,7 @@ title: Vegard Stikbakke
 
 # Vegard Stikbakke
 
-I'm an MS student in statistics at the University of Oslo (in Norway), and I work at [Konsus](https://konsus.com) (YC W16) as a software engineer. Previously I did a BS in math and computer science. I'm interested in software development, machine learning, and learning new things.
+I'm an MS student in statistics at the University of Oslo (in Norway). Previously I did a BS in math and computer science. I'm interested in software development, machine learning, and learning new things. On this blog, I'll post things that I've learned recently and that I'm thinking about. It's also an experiment to get me to write more and be less perfectionist about it.
 
 ## Blog
 <div id="blog-links">
