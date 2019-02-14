@@ -29,6 +29,10 @@ I'm an MS student in statistics at the University of Oslo (in Norway). Previousl
             <a href="https://github.com/vegarsti">GitHub</a>
         </li>
         <li>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <a href="https://twitter.com/vegardstikbakke">Twitter</a>
+        </li>
+        <li>
             <i class="fa fa-linkedin" aria-hidden="true"></i>
             <a href="https://no.linkedin.com/in/vegardstikbakke">LinkedIn</a>
         </li>
