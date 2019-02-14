@@ -1,7 +1,7 @@
 # Site settings
 title: Vegard Stikbakke
 email: vegard.stikbakke@gmail.com
-description: "Vegard Stikbakke, an MS Statistics student. Interested in statistics, programming, and their intersection."
+description: "Vegard Stikbakke"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://vegardstikbakke.com" # the base hostname & protocol for your site
 
