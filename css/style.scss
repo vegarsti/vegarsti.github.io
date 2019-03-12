@@ -6,7 +6,7 @@
 $color: black;
 $background-color: white;
 $brand-color: #268bd2;
-$gray-color: #a8a8a8;
+$gray-color: #868686;
 
 /* Main styling */
 
@@ -219,4 +219,11 @@ i {
 .space {
   display: inline block;
   width: 200px;
+}
+
+blockquote {
+  padding-left: 1px;
+  p {
+    color: $gray-color;
+  }
 }
