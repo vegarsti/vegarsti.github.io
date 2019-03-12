@@ -5,7 +5,7 @@ title: Vegard Stikbakke
 
 # Vegard Stikbakke
 
-I'm an MS student in statistics at the University of Oslo. Previously I did a BS in math and computer science. I like software development, machine learning, and learning new things. I write about software and math.
+I'm an MS student in statistics at the University of Oslo. Previously I did a BS in math and computer science. I like software development, machine learning, and reading to learn new things, like economics and history. I sometimes write blog posts.
 
 ## Blog
 <div id="blog-links">
