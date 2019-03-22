@@ -57,5 +57,5 @@ I'm an MS student in statistics at the University of Oslo. Previously I did a BS
 
 ## Projects
 
-- [Reply-to-sheet](http://reply-to-sheet.com)
+- [Image-to-table](http://image-to-table.com)
 - [`csvprint`](http://github.com/vegarsti/csvprint)
