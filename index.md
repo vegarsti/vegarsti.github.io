@@ -5,7 +5,9 @@ title: Vegard Stikbakke
 
 # Vegard Stikbakke
 
-I'm an MS student in statistics at the University of Oslo. Previously I did a BS in math and computer science. I like software development, machine learning, and reading to learn new things, like economics and history. I sometimes write blog posts.
+I'm a software engineer at [Cognite](https://cognite.com).
+I have an MS in statistics and a BS in math and computer science from the University of Oslo.
+I like software development, machine learning, and reading.
 
 ## Blog
 <div id="blog-links">
@@ -16,7 +18,7 @@ I'm an MS student in statistics at the University of Oslo. Previously I did a BS
 <br />{{ post.date | date: "%B %-d, %Y" }}
 </div>
 {% endfor %}
-<ul><li><i class="fa fa-pencil" aria-hidden="true"></i><h3><a href="blog/">All {{ site.posts.size }} blog posts</a></h3></li></ul>
+<ul><li><i class="fa fa-pencil" aria-hidden="true"></i><h3><a href="blog/">View all posts</a></h3></li></ul>
 </div>
 
 ## Links
@@ -29,6 +31,10 @@ I'm an MS student in statistics at the University of Oslo. Previously I did a BS
             <a href="https://github.com/vegarsti">GitHub</a>
         </li>
         <li>
+            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            <a href="assets/pdf/Resume.pdf">Resume</a>
+        </li>
+        <li>
             <i class="fa fa-twitter" aria-hidden="true"></i>
             <a href="https://twitter.com/vegardstikbakke">Twitter</a>
         </li>
@@ -39,10 +45,6 @@ I'm an MS student in statistics at the University of Oslo. Previously I did a BS
         <li>
             <i class="fa fa-envelope-o" aria-hidden="true"></i>
             <code>vegard.stikbakke@gmail.com</code>
-        </li>
-        <li>
-            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
-            <a href="assets/pdf/Resume.pdf">Resume</a>
         </li>
     </ul>
 </div>
