@@ -31,7 +31,7 @@ I like software development, machine learning, and reading.
             <a href="https://github.com/vegarsti">GitHub</a>
         </li>
         <li>
-            <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+            <i class="fa fa-file-text-o" aria-hidden="true"></i>
             <a href="assets/pdf/Resume.pdf">Resume</a>
         </li>
         <li>
