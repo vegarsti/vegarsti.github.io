@@ -6,9 +6,8 @@ title: Vegard Stikbakke
 # Vegard Stikbakke
 
 I'm a software engineer at [Cognite](https://cognite.com).
-I have an MS in statistics and a BS in math and computer science from the University of Oslo, and I've previously worked at several Norwegian companies: [Konsus](https://www.konsus.com), [Spacemaker](https://spacemaker.ai), [Kolonial.no](https://jobb.kolonial.no), and [Bekk Consulting](https://www.bekk.no).
-I like using data and software to solve problems.
-I also love to read.
+I have an MS in statistics and a BS in math and computer science from the University of Oslo.
+I like using data and software to solve problems, and I love to read.
 
 ## Blog
 <div id="blog-links">
