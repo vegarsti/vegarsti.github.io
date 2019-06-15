@@ -3,7 +3,7 @@ layout: post
 title: Helpful Python features
 ---
 
-This is adapted from a talk/live coding session I did while interning at [Spacemaker](http://spacemaker.ai).
+This is adapted from a talk/live coding session I did while interning at [Spacemaker](https://spacemaker.ai).
 
 A lot of the programming we do in Python consists of doing stuff with lists and dictionaries. If we squint, we see that most of the things we do are quite common, and the Python library has several helpful functions. In this post, I will cover these features and show some use cases for them:
 
