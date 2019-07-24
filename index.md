@@ -8,7 +8,7 @@ title: Vegard Stikbakke
 I'm a software engineer at [Cognite](https://cognite.com).
 I like using data and software to solve problems.
 I have an MS in statistics and a BS in math and computer science from the University of Oslo.
-Please send me book recommendations!
+Please send book recommendations!
 
 ## Blog
 <div id="blog-links">
