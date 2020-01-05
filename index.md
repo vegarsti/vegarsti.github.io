@@ -6,8 +6,8 @@ title: Vegard Stikbakke
 # Vegard Stikbakke
 
 I'm a backend software engineer at [Cognite](https://cognite.com).
-I have an MS in statistics and a BS in math and computer science from the University of Oslo.
-Please send book recommendations!
+I studied statistics, math and computer science at the University of Oslo.
+I like to read and learn.
 
 ## Blog
 <div id="blog-links">
