@@ -30,7 +30,7 @@ edit() {
         exit 1
     fi
     local FILENAME="${MY_ARRAY[$ACTUAL_CHOICE]}"
-    open "$FILENAME"
+    micro "$FILENAME"
     echo "Opening draft '$FILENAME'!"
 }
 
