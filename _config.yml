@@ -3,7 +3,7 @@ title: Vegard Stikbakke
 email: vegard.stikbakke@gmail.com
 description: "Vegard Stikbakke"
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://vegardstikbakke.com" # the base hostname & protocol for your site
+url: "https://vegardstikbakke.com" # the base hostname & protocol for your site
 
 # Settings for datetime and language
 date_format: "%B %d, %Y"  # e.g. April 22, 2017
