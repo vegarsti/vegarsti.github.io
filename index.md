@@ -9,18 +9,6 @@ I'm a backend software engineer at [Cognite](https://cognite.com).
 I studied statistics, math and computer science at the University of Oslo.
 I like to read and learn.
 
-## Blog
-<div id="blog-links">
-{% assign limit = 3 %}
-{% for post in site.posts limit: limit %}
-<div class="blog-link">
-<a href="{{ post.url }}">{{ post.title }}</a>
-<br />{{ post.date | date: "%B %-d, %Y" }}
-</div>
-{% endfor %}
-<ul><li><i class="fas fa-pencil-alt" aria-hidden="true"></i><h3><a href="blog/">View all posts</a></h3></li></ul>
-</div>
-
 ## Links
 
 <!-- Hacky HTML to get list of links with images and decent placement -->
@@ -53,15 +41,15 @@ I like to read and learn.
     </ul>
 </div>
 
-<!-- Old list of links
-<i class="fa fa-github" aria-hidden="true"></i> [GitHub](https://github.com/vegarsti)
-<br /><i class="fa fa-linkedin" aria-hidden="true"></i> [LinkedIn](https://no.linkedin.com/in/vegardstikbakke)
-<br /><i class="fa fa-twitter" aria-hidden="true"></i> [Twitter](https://twitter.com/vegardstikbakke)
-<br /><i class="fa fa-envelope-o" aria-hidden="true"></i> [E-mail](mailto:vegard.stikbakke@gmail.com)
-<br /><i class="fa fa-file-pdf-o" aria-hidden="true"></i> [Resume](assets/pdf/resume.pdf)
--->
-
-## Projects
-
-- [Image-to-table](http://image-to-table.com)
-- [`csvprint`](http://github.com/vegarsti/csvprint)
+## Posts
+<div id="blog-links">
+{% assign limit = 20 %}
+{% for post in site.posts limit: limit %}
+<div class="blog-link">
+<a href="{{ post.url }}">{{ post.title }}</a>
+<br />{{ post.date | date: "%B %-d, %Y" }}
+</div>
+<br />
+{% endfor %}
+<h3><a href="blog/">View all posts</a></h3>
+</div>
