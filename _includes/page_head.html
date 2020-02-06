@@ -1,21 +1,7 @@
 <header class="site-header">
 
   <div class="wrapper">
-
-    <a class="site-title" style="color: black;" href="{{ "/" | relative_url }}">Vegard Stikbakke (home)</a>
-
-    <nav class="site-nav">
-
-      {% for link in site.navigation %}
-        {% if link.url contains "http" %}
-          {% assign url = link.url %}
-        {% else %}
-          {% assign url = link.url | relative_url %}
-        {% endif %}
-        <a class="page-link" href="{{ url }}">{{ link.title }}</a>
-      {% endfor %}
-    </nav>
-
+    <a class="muted small" href="{{ "/" | relative_url }}">Vegard Stikbakke</a>
   </div>
 
 </header>
