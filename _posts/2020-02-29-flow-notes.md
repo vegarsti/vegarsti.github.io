@@ -16,7 +16,7 @@ On the contrary, _Flow_ was a very inspiring book.
 It is a fascinating look into ways we can experience flow.
 _Flow_ builds on thousands of interviews conducted by MC and his research team.
 It discusses themes where I expected flow to show up, namely hobbies, work, and sports.
-However, the book also discusses other topics, such as how to get the most out of life, including
+However, the book also discusses other topics that touch more broadly on how to get the most out of life, including
 
 - marriage and raising kids
 - being alone
