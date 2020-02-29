@@ -163,8 +163,6 @@ Being autotelic was important for overcoming isolation.
 
 <hr />
 
-## Conclusion
-
 Have you read _Flow_?
-If so, I'd love to hear your thoughts!
+If so, I'd love to hear what you got out of it!
 Send me an email.
