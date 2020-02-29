@@ -41,10 +41,10 @@ I like to read and learn.
 
 
 ## Posts
-<div id="blog-links">
+<div>
 {% assign limit = 4 %}
 {% for post in site.posts limit: limit %}
-<div class="blog-link">
+<div>
 <a href="{{ post.url }}">{{ post.title }}</a>
 <br />{{ post.date | date: "%B %-d, %Y" }}
 </div>
