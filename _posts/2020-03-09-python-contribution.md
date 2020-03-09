@@ -1,0 +1,7 @@
+---
+layout: post
+title: I fixed a bug in Python!
+---
+
+In the fall, we found a bug in the unittest module in Python.
+In January, [my PR](https://github.com/python/cpython/pull/17409) was merged onto the cpython master!
