@@ -1,10 +1,10 @@
 ---
 layout: post
-title: How do Unix pipes work? SIGPIPE
+title: How do Unix pipes work?
 ---
 
 Pipes are cool!
-We saw how handy it was in a [previous blog post](/unix).
+We saw how handy they are in a [previous blog post](/unix).
 Let's look at a typical way to use the pipe operator.
 We have some output, and we want to look at the first lines of the output.
 Let's [download](https://www.gutenberg.org/files/28054/28054-0.txt) [The Brothers Karamazov](https://en.wikipedia.org/wiki/Lazy_evaluation) by Fyodor Dostoevsky, a fairly long novel.
@@ -38,10 +38,8 @@ In this blog post, we'll learn a bit about how pipes work, and write a small `ca
 
 <hr />
 
-First we need to learn a bit about pipes.
-
 Processes in a pipeline are started simultaneously.
-We can confirm this by running <!-- a `sleep` command, which will do nothing, and pipe it into something else. -->
+We can confirm this by running
 
 ```bash
 > sleep 100 | head 
@@ -176,8 +174,9 @@ for line in sys.stdin:
 
 ## Writing a `cat` clone in Go
 
-I want to learn some Go, so let's try writing the same program in Golang.
-The first program becomes
+I want to learn some Go, so let's try writing the same program in it.
+In Go, we can apparently simply copy from standard in to standard out.
+The first program becomes a tidy one liner.
 
 ```go
 // cat.go
@@ -193,7 +192,7 @@ func main() {
 }
 ```
 
-which when run also complains about `SIGPIPE`:
+When we run this, it also complains about `SIGPIPE`:
 
 ```sh
 > cat karamazov.txt | go run cat.go | head -n 2
@@ -202,7 +201,7 @@ Dostoyevsky
 signal: broken pipe
 ```
 
-Turns out ignoring this is fairly easy.
+Turns out ignoring the `SIGPIPE` is signal also is one line.
 
 ```go
 // cat.go
