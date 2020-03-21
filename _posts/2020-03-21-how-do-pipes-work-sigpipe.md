@@ -201,9 +201,9 @@ Dostoyevsky
 signal: broken pipe
 ```
 
-Turns out ignoring the `SIGPIPE` is signal also is one line.
+Turns out ignoring the `SIGPIPE` signal also is one line.
 
-```go
+```golang
 // cat.go
 package main
 
