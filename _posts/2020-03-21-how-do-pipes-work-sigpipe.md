@@ -221,3 +221,6 @@ func main() {
 ```
 
 I hope you learned something reading this!
+
+This post [got some attention on Hacker News](https://news.ycombinator.com/item?id=22647539), and many valid concerns were raised.
+You should read the comments there!
