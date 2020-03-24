@@ -55,7 +55,7 @@ in one terminal window, and taking a look at running processes with `ps` in anot
 ```
 
 From the Unix manual page on pipes, [`man(7) pipe`](https://linux.die.net/man/7/pipe), we learn that if we pipe `process1` into `process2`, the second process will wait (block) until it receives input.
-Furthermore, if `process1` is finished, it closes its end of the pipe.
+Furthermore, if `process2` is finished, it closes its end of the pipe.
 This will cause a `SIGPIPE` signal to be generated for `process1`.
 
 ## Writing a `cat` clone in Python
