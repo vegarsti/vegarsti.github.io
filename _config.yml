@@ -31,11 +31,6 @@ assets:
   sources:
     - assets/fonts
 
-# Specify sites appearing in the nav menu
-navigation:
-  - title: "Blog"
-    url: /blog/
-
 # Markdown settings
 kramdown:
   auto_ids: false
