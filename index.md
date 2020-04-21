@@ -7,7 +7,6 @@ title: Vegard Stikbakke
 
 I'm a backend software engineer at [Cognite](https://cognite.com).
 I studied statistics, math and computer science at the University of Oslo.
-I like to read and learn.
 
 ## Links
 
