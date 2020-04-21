@@ -5,23 +5,23 @@ title: Learning Go by writing a rate limiter
 
 I've recently been lucky enough to be able to learn some Go at work, while actually solving a problem that we needed to solve.
 I thought I would write down some things I learned from it.
-While learning this I found the wonderful site [gobyexample.com](gobyexample.com), by [Mark McGranaghan](https://markmcgranaghan.com), extremely useful.
-I have sprinkled this blog post with links to respective pages on gobyexample.com.
+While learning this I found the wonderful site [gobyexample.com](gobyexample.com) extremely useful.
+I've sprinkled this blog post with links to it.
 
 ### Problem
 Let's say we need to write a rate limiter.
 For our purposes, a rate limiter is a service that only allows a certain amount of incoming traffic to pass.
-To be a bit more concrete, let's say that the incoming traffic consist of files to processed, and we want to allow `N` files per second.
+To be slightly more concrete, let's say that the incoming traffic consist of files to process, and we want to allow `N` files per second.
 For simplicity, let's say that `N` is 2.
 Normally, rate limiting means simply ignoring or discarding the traffic above the threshold of allowed traffic.
 However, these requests are files that are submitted for processing, so we can't simply ignore them.
 But we do want to somehow prioritize these less.
-We could, for example, send the remaining traffic to a lower priority version of the service.
+We could, for example, send the remaining traffic to a lower priority version of the service, and this is what we'll do.
 
-The most important thing for this service is to be able to do a lot of concurrent requests.
-While the rest of our pipeline is in Python, the current implementation is not able to have the necessary level of concurrency.
+The most important thing for this service is to be able to handle many concurrent requests.
+While the rest of our pipeline is in Python, a Python implementation is not able to achieve the necessary level of concurrency.
 We therefore decided to write this service in Go.
-Go has [goroutines](https://gobyexample.com/goroutines), which are _lightweight threads of execution_.
+Go has [goroutines](https://gobyexample.com/goroutines), which are lightweight threads of execution.
 
 ### False start
 Initially I thought that I could keep a counter for the number of requests.
@@ -35,20 +35,16 @@ I also needed a way to find the traffic within a time interval - the latest minu
 Although this surely is doable, I couldn't figure out how do to it.
 
 ### Eureka
-Luckily, Go has channels.
 One of Go's mottos is 
 
 > [Share memory by communicating, don't communicate by sharing memory](https://github.com/golang/go/wiki/MutexOrChannel)
 
-It turns out what we want to achieve can be done quite elegantly in Go, using [channels](https://gobyexample.com/channels)..
-Using a channel, we can send and receive values.
-Multiple goroutines can use the same channel.
-It eliminates the need for any synchronization or locking on our side.
-The synchronization happens automatically using the channel.
-Channels [are the pipes that connect concurrent goroutines](https://gobyexample.com/channels).
+It turns out what we want to achieve can be done quite elegantly in Go using [channels](https://gobyexample.com/channels).
+Using a channel, we can send and receive values, and multiple goroutines can use the same channel.
+There's no need for any explicit synchronization or locking, the synchronization happens automatically using the channel.
 
 ### Channels
-Here's an example of using a channel.
+Here's a channel example.
 
 ```go
 // channels.go
@@ -75,7 +71,7 @@ What's happening here is:
 (If we call a function with `go` in front, the code will run as a goroutine.)
 3. We then receive the message from the channel, assign it to a variable, and finally print the message.
 
-So when we run this, using `go run channels.go`, we get `ping` back.
+When we run this, we get `ping`.
 
 By default a channel is unbuffered, meaning it is synchronized.
 This means that a value must be received from the channel at the same time as it's being sent.
@@ -87,7 +83,6 @@ If we do that, the program crashes!
 It's also possible to buffer a channel with multiple values.
 We do this by adding a number to the `make` call when we create a channel.
 In our case, since we want to allow 2 requests per second, we can create a channel that has a buffer of 2 values.
-Then the channel can be received from twice at the same time.
 
 ```go
 // buffering.go
@@ -104,7 +99,7 @@ func main() {
 }
 ```
 
-When we run this, using `go run buffering.go`, we get
+We run it.
 
 ```
 > go run buffering.go
@@ -112,16 +107,17 @@ When we run this, using `go run buffering.go`, we get
 2
 ```
 
-Had we tried to get a third value, our program would crash.
-Note here that it was not a problem that we sent messages to the channel directly, we didn't have to do it in a goroutine.
+Had we tried to receive from the channel a third time, our program would crash.
+Note here that we could send messages to the channel directly, we didn't have to do it in a goroutine.
 
 ### Tickers
 
-Go has a nice thing called a [Ticker](https://gobyexample.com/tickers), which will trigger with a specified interval duration.
-Since we want to allow 2 requests per second, we can make it trigger each half second.
+Go has a nice thing called a [Ticker](https://gobyexample.com/tickers), which will trigger indefinitely at a specified interval.
+We want to allow 2 requests per second, so let's make it trigger each half second.
 We can use this to send messages to the channel every half second, see `sendTick()` below.
-In the main program, we can start an infinite loop that listens to the channel, see `receive()` below.
-In the loop that listens to the channel, we can again call some other function, see `doSomething()`.
+
+We extend our main function with an infinite loop `receive` that listens to the channel.
+In the loop that listens to the channel, we can again call some other function `doSomething` when we do receive a message.
 The sum of this means that the `doSomething` function will be called every 0.5 seconds.
 
 ```go
@@ -157,7 +153,7 @@ func main() {
 	receive(rateLimiter)
 }
 ```
-By running this we can confirm that the function is indeed called twice per second.
+We can confirm that the function is indeed called twice per second by looking at the times that are printed.
 
 ```
 > go run ticker.go
@@ -170,13 +166,15 @@ By running this we can confirm that the function is indeed called twice per seco
 
 We have a rate limiter that will allow 2 requests per second.
 We're almost there!
-(Notice the arrows on the channel types here! The channel type in `receive` is slightly different from the one in `sendTick`.)
+(Did you notice that the channel type in `receive` is slightly different from the one in `sendTick`? The arrows specify whether the channel can be received from or sent to - see [Channel Directions on gobyexample.com](https://gobyexample.com/channel-directions).)
 
 ### Using `select` to perform a default action
 
-By default sends and receives on a channel block until both the sender and receiver are ready.
+By default sends and receives on a channel _block_ until both the sender and receiver are ready.
 If we create a buffered channel, this isn't the case _when there is spare capacity in the channel_.
-But as we saw, the `<-rateLimiter` call blocks until there is a value to be received from the channel.
+But when there isn't, the channel blocks.
+We saw this with the `<-rateLimiter` call above.
+
 Let's think about our problem again.
 If there is no value to be received from the channel, it means that we have exhausted the high priority queue for the current second.
 So if we have got a request, we want to send it to the lower priority queue.
