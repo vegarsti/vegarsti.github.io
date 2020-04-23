@@ -5,7 +5,7 @@ title: Learning Go by writing a rate limiter
 
 I've recently been learning some Go at work, while actually solving a problem that we needed to solve.
 I thought I would write down some things I learned from it.
-While doing so I found the wonderful site [gobyexample.com](gobyexample.com) extremely useful.
+While doing so I found the wonderful site [gobyexample.com](https://gobyexample.com) extremely useful.
 I've sprinkled this blog post with links to it.
 
 ### Problem
