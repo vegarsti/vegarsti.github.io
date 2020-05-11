@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Learning Go by writing a rate limiter
+title: Writing a rate limiter in Go without counting
 ---
 
 I've recently been learning some Go at work, while actually solving a problem that we needed to solve.
