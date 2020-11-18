@@ -3,7 +3,7 @@ layout: post
 title: Learning about iterators and generators in Python
 ---
 
-Python is a cool language! I might be biased, since that's what I used to learn programming some years ago. It wasn't until recently, though, that I started learning about some more advanced features of the language. One such feature is iterators and generators.
+Python is a cool language! I might be biased, since it's what I used to learn programming some years ago. It wasn't until recently, though, that I started learning about some more advanced features of the language. One such feature is iterators and generators.
 
 An **iterator** is, [in the words of the official documentation](https://docs.python.org/3/glossary.html#term-iterator), *an object representing a stream of data*. An iterator is something you can call `next` on to get the next item. This is what happens in a `for` loop from one iteration to the next (I think!).
 
