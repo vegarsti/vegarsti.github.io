@@ -5,7 +5,7 @@ title: Vegard Stikbakke
 
 # Vegard Stikbakke
 
-I'm a software engineer at [Cognite](https://cognite.com).
+I'm a software engineer at [Dune Analytics](https://duneanalytics.com/).
 I studied statistics, math and computer science at the University of Oslo.
 I enjoy getting email, don't hesitate to send me one.
 
