@@ -17,7 +17,7 @@ layout: post
 title: $TITLE
 ---
 EOT
-    micro "$FULL_FILENAME"
+    open "$FULL_FILENAME"
 }
 
 if [ "$#" -ne 2 ]; then
