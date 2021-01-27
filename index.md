@@ -7,7 +7,7 @@ title: Vegard Stikbakke
 
 I'm a software engineer at [Dune Analytics](https://duneanalytics.com/).
 I studied statistics, math and computer science at the University of Oslo.
-I enjoy getting email, don't hesitate to send me one.
+I love getting email, please send me one if you feel like it!
 
 ## Links
 
@@ -42,13 +42,30 @@ I enjoy getting email, don't hesitate to send me one.
 
 ## Posts
 <div>
-{% assign limit = 4 %}
-{% for post in site.posts limit: limit %}
 <div>
-<a href="{{ post.url }}">{{ post.title }}</a>
-<br />{{ post.date | date: "%B %-d, %Y" }}
+<a href="https://www.vegardstikbakke.com/books-2020/">Books I read in 2020</a>
+<br />January 4, 2021
 </div>
 <br />
-{% endfor %}
+<div>
+<a href="https://www.vegardstikbakke.com/how-do-pipes-work-sigpipe/">How do Unix pipes work?</a>
+<br />March 21, 2020
+</div>
+<br />
+<div>
+<a href="https://www.vegardstikbakke.com/python-contribution/">I fixed a bug in Python!</a>
+<br />March 9, 2020
+</div>
+<br />
+<div>
+<a href="https://www.vegardstikbakke.com/books-2019/">Books I read in 2019</a>
+<br />January 5, 2020
+</div>
+<br />
+<div>
+<a href="https://www.vegardstikbakke.com/unix/">Problem solving with Unix commands</a>
+<br />February 13, 2019
+</div>
+<br />
 <h3><a href="blog/">View all posts</a></h3>
 </div>
