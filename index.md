@@ -5,9 +5,10 @@ title: Vegard Stikbakke
 
 # Vegard Stikbakke
 
-I'm a software engineer at [Dune Analytics](https://duneanalytics.com/).
-I studied statistics, math and computer science at the University of Oslo.
-I enjoy getting email, don't hesitate to send me one.
+I'm a software engineer at [Dune Analytics](https://duneanalytics.com/), where I work primarily on our backend.
+Previously, I built a document search API at [Cognite](https://cognite.com), and studied statistics and computer science at the University of Oslo.
+
+I really like meeting new people, so don't hesitate to send me an email if you have something on your mind!
 
 ## Links
 
@@ -27,7 +28,7 @@ I enjoy getting email, don't hesitate to send me one.
   </tr>
   <tr>
     <td><i class="fab fa-linkedin" aria-hidden="true"></i></td>
-    <td>&nbsp;<a href="https://no.linkedin.com/in/vegardstikbakke">LinkedIn</a></td> 
+    <td>&nbsp;<a href="https://linkedin.com/in/vegardstikbakke">LinkedIn</a></td> 
   </tr>
   <tr>
     <td><i class="fas fa-file-alt" aria-hidden="true"></i></td>
