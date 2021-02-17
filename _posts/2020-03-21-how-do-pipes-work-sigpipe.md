@@ -224,3 +224,5 @@ I hope you learned something reading this!
 
 This post [got some attention on Hacker News](https://news.ycombinator.com/item?id=22647539), and many valid concerns were raised.
 You should read the comments there!
+
+If you liked this post, you might like my other post [**Problem solving with Unix commands**](../unix).
