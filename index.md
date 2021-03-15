@@ -8,7 +8,7 @@ title: Vegard Stikbakke
 I'm a software engineer at [Dune Analytics](https://duneanalytics.com/), where I work primarily on our backend.
 Previously, I built a document search API at [Cognite](https://cognite.com), and studied statistics and computer science at the University of Oslo.
 
-I really like meeting new people, so don't hesitate to send me an email if you have something on your mind!
+Send me an email and say hi! If you're considering emailing me, then I probably want to hear from you!
 
 ## Links
 
