@@ -5,13 +5,11 @@ title: Vegard Stikbakke
 
 # Vegard Stikbakke
 
-I'm a software engineer at [Dune Analytics](https://duneanalytics.com/), where I work primarily on our backend.
-Previously, I built a document search API at [Cognite](https://cognite.com), and studied statistics and computer science at the University of Oslo.
+I'm a software engineer from Norway.
+I work at [Dune Analytics](https://duneanalytics.com/) and
+I studied statistics and computer science at the University of Oslo.
 
-Send me an email and say hi! If you're considering emailing me, then I probably want to hear from you!
-
-## Links
-
+My email is <code>vegard.stikbakke@gmail.com</code>, don't hesitate to say hi!
 
 <table>
   <tr>
@@ -33,10 +31,6 @@ Send me an email and say hi! If you're considering emailing me, then I probably 
   <tr>
     <td><i class="fas fa-file-alt" aria-hidden="true"></i></td>
     <td>&nbsp;<a href="assets/pdf/Resume.pdf">Resume</a></td> 
-  </tr>
-  <tr>
-    <td><i class="fas fa-envelope" aria-hidden="true"></i></td>
-    <td>&nbsp;<code>vegard.stikbakke@gmail.com</code></td> 
   </tr>
 </table>
 
