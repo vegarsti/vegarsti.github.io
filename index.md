@@ -35,7 +35,7 @@ My email is <code>vegard.stikbakke@gmail.com</code>, don't hesitate to say hi!
 </table>
 
 
-## Posts
+## Selected posts
 <div>
 <div>
 <a href="dependencies/">Waiting for dependencies in tests</a>
