@@ -38,6 +38,11 @@ My email is <code>vegard.stikbakke@gmail.com</code>, don't hesitate to say hi!
 ## Posts
 <div>
 <div>
+<a href="dependencies/">Waiting for dependencies in tests</a>
+<br />May 28, 2021
+</div>
+<br />
+<div>
 <a href="books-2020/">Books I read in 2020</a>
 <br />January 4, 2021
 </div>
