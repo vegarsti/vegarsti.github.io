@@ -38,7 +38,7 @@ The lazy way to do step 2 is to wait a set amount of time before executing tests
 To be sure that the dependencies are indeed ready when we start our tests, we will want to set `N` to a safe upper bound on the depency's startup time.
 If we run locally, we probably have the Docker containers cached, so `docker-compose up` might not take long.
 However, if we run our CI in Github Actions, the containers will not be cached, and so the wait time is longer and more unpredictable.
-This means that if we set the time to a comfortable upper bound we risk wasting time each time we run our tests.
+This means that if we set the time to a comfortable upper bound so we sleep long enough in CI, we risk wasting time each time we run our tests locally.
 
 But there are better solutions!
 
